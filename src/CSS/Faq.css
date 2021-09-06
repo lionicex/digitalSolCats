@@ -1,0 +1,77 @@
+.FAQ {
+	margin-top: 96px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-self: stretch;
+}
+
+*, :after, :before {
+	box-sizing: border-box;
+}
+
+.FAQ-Title {
+	align-self: center;
+	text-align: center;
+	margin: 8px;
+}
+
+.Text, .Text-title {
+	font-size: 48px;
+	line-height: 58px;
+}
+
+.Text {
+	font-family: Balsamiq Sans;
+	font-style: normal;
+	font-weight: 700;
+	color: #4e103c;
+	margin-bottom: 0;
+}
+
+.FAQ-List, .Question {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	flex: 1 1;
+}
+
+.FAQ-List {
+	margin: 48px;
+}
+
+.Question {
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+.Question-Button, .Question-Row {
+	display: flex;
+	align-items: center;
+}
+
+.Question-Row {
+	flex: 1 1;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.QuestionTitle {
+	text-align: left;
+}
+
+h3 {
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 43px;
+}
+
+.QuestionAnswer {
+	margin-top: 12px;
+	text-align: left;
+}
+.Text-body {
+	font-size: 24px;
+	line-height: 29px;
+}

@@ -1,0 +1,71 @@
+.TeamRoot {
+	margin-top: 96px;
+	display: flex;
+	flex-direction: column;
+}
+*, :after, :before {
+	box-sizing: border-box;
+}
+.Text, .Text-title {
+	font-size: 48px;
+	line-height: 58px;
+}
+
+.Text {
+	font-family: Balsamiq Sans;
+	font-style: normal;
+	font-weight: 700;
+	color: #4e103c;
+	margin-bottom: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	margin-bottom: .5em;
+	color: rgba(0,0,0,.85);
+	font-weight: 500;
+}
+.TeamMembers {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.TeamMember {
+	display: flex;
+	flex-direction: column;
+	margin: 16px 32px 32px;
+	align-items: center;
+}
+.TeamImage {
+	margin-bottom: 16px;
+	width: 196px;
+	height: 196px;
+	border-radius: 24px;
+	overflow: hidden;
+	border: 12px solid #fff;
+}
+.Text-subtitle {
+	font-size: 37px;
+	line-height: 44px;
+}
+{
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 43px;
+}
+h1, h3 {
+	font-family: Balsamiq Sans;
+	font-style: normal;
+	text-align: center;
+	color: #10294e;
+}
+.Text-caption {
+	font-size: 20px;
+	line-height: 24px;
+	text-align: center;
+	text-transform: uppercase;
+}
+p {
+	margin-top: 0;
+	margin-bottom: 1em;
+}

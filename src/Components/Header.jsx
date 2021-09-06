@@ -48,8 +48,8 @@ const Header = () => {
 					<div style={walletButton}>Wallet</div>
 				</div>
 			</div>
-			<h1 className="title">DigitaSolCats</h1>
-			<h3 className="subtitle">10,000 cute & cruel cats living on the Solana lands. Each of them are randomly
+			<h1 className="title">ZebraPunk</h1>
+			<h3 className="subtitle">10,000 cute & cruel zebras living on the Solana lands. Each of them are randomly
 				generated with more than 90+ hand drawn traits!</h3>
 			<p className="text text-caption">Vamos a vender fleje</p>
 			<div className="bottom-image"/>
