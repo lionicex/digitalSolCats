@@ -6,7 +6,7 @@ const Roadmap = () => {
 	const roadmapCard = {color: 'inherit', textDecoration: 'underline'}
 	return (
 		<>
-			<div className="Roadmap"><h2 className="Text Text-title" style={roadmap}>Roadmap</h2>
+			<div className="Roadmap"><h2 className="Text-roadmap Text-title-roadmap" style={roadmap}>Roadmap</h2>
 				<div className="RoadmapRow">
 					<div className="RoadmapCard-Root">
 						<div className="RoadmapCard-title">Smooth Launch 🚀</div>

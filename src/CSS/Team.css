@@ -1,41 +1,46 @@
+@import "Style.css";
 .TeamRoot {
-	margin-top: 96px;
+	margin-top: 200px;
 	display: flex;
 	flex-direction: column;
 }
-*, :after, :before {
-	box-sizing: border-box;
-}
-.Text, .Text-title {
+
+
+
+.Text-team, .Text-title-team {
 	font-size: 48px;
 	line-height: 58px;
 }
 
-.Text {
-	font-family: Balsamiq Sans;
+.Text-team {
+	font-family: acremedium;
 	font-style: normal;
 	font-weight: 700;
-	color: #4e103c;
-	margin-bottom: 0;
+	color: #314375;
+	margin-bottom: 100px;
 }
+
 h1, h2, h3, h4, h5, h6 {
 	margin-top: 0;
 	margin-bottom: .5em;
-	color: rgba(0,0,0,.85);
+	color: #314375;
 	font-weight: 500;
 }
+
 .TeamMembers {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
 }
+
 .TeamMember {
 	display: flex;
 	flex-direction: column;
 	margin: 16px 32px 32px;
 	align-items: center;
 }
+
 .TeamImage {
 	margin-bottom: 16px;
 	width: 196px;
@@ -44,28 +49,19 @@ h1, h2, h3, h4, h5, h6 {
 	overflow: hidden;
 	border: 12px solid #fff;
 }
-.Text-subtitle {
+
+.Text-subtitle-team {
 	font-size: 37px;
 	line-height: 44px;
 }
-{
-	font-weight: 400;
-	font-size: 36px;
-	line-height: 43px;
-}
-h1, h3 {
-	font-family: Balsamiq Sans;
-	font-style: normal;
-	text-align: center;
-	color: #10294e;
-}
-.Text-caption {
+
+
+
+
+.Text-caption-team {
 	font-size: 20px;
 	line-height: 24px;
 	text-align: center;
 	text-transform: uppercase;
 }
-p {
-	margin-top: 0;
-	margin-bottom: 1em;
-}
+

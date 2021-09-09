@@ -1,42 +1,57 @@
+@import "Style.css";
 
-a {
-	color: #1890ff;
-	text-decoration: none;
-	background-color: transparent;
-	outline: none;
-	cursor: pointer;
-	transition: color .3s;
-	-webkit-text-decoration-skip: objects;
+
+.header {
+	position: relative;
+	height: 70vh;
+	padding: 48px;
+	background: #314375;
+	overflow: hidden;
 }
 
-h1, h3 {
-	font-family: Balsamiq Sans, sans-serif;
-	font-style: normal;
+.button-header {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	z-index: 50;
+}
+
+.buttons {
+	margin-left: 32px;
+}
+
+.wallet {
+	position: relative;
+}
+
+.wallet-button {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
-	color: #10294e;
-}
-
-h1 {
+	padding: 30px;
+	background: #1EB6BA;
+	box-sizing: border-box;
+	border-radius:10px;
+	font-style: normal;
 	font-weight: 700;
-	font-size: 64px;
-	line-height: 77px;
+	font-size: 20px;
+	line-height: 24px;
+	color: #ffffff;
+	margin-left: 32px;
+	max-height: 50px;
 }
 
-h3 {
-	font-weight: 400;
-	font-size: 36px;
-	line-height: 43px;
-}
-
-.title {
+.title-header {
 	z-index: 1;
 	margin-top: 64px;
-
+	color: #ffffff;
 }
 
-subtitle {
+.subtitle-header {
 	z-index: 1;
-	font-family: Balsamiq Sans;
+	font-family: acremedium;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 36px;
@@ -44,34 +59,35 @@ subtitle {
 	display: flex;
 	align-items: center;
 	text-align: center;
-	color: #10294e;
-	max-width: 1080px;
+	color: #ffffff;
 	align-self: center;
 }
 
-.text {
-	font-family: Balsamiq Sans;
+.text-header {
+	font-family: acremedium;
 	font-style: normal;
 	font-weight: 700;
-	color: rgb(16, 41, 78);
+	color: #ffffff;
 	margin-bottom: 0;
 }
 
-.text-caption {
+.text-caption-header {
 	font-size: 20px;
 	line-height: 24px;
 	text-align: center;
 	text-transform: uppercase;
+	color: #ffffff;
 }
-.bottom-image{
-	height: 212px;
+
+.bottom-image-header {
+	height: 400px;
 	position: absolute;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-repeat: repeat;
-	background-size: cover;
-	background-image: url(/src/static/media/botton-image.jpeg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-image: url(/src/static/media/car-avatars.png);
 	animation: backgroundScroll 10s linear 1;
 	animation-fill-mode: forwards;
 	animation-iteration-count: infinite;
