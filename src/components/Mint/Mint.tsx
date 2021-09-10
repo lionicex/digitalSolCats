@@ -1,6 +1,11 @@
+import { useAnchorWallet } from "@solana/wallet-adapter-react";
+import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 import { useState } from "react";
 import ReactModal from "react-modal";
-import "../styles/mint.css";
+import { useRecoilValue } from "recoil";
+import "../../styles/mint.css";
+import { isDropActiveState } from "../../utils/atoms";
+import Countdown from "./Countdown";
 
 ReactModal.setAppElement("#root");
 ReactModal.defaultStyles.overlay = {
@@ -26,16 +31,27 @@ ReactModal.defaultStyles.content = {
 
 const Mint = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const isDropActive = useRecoilValue(isDropActiveState);
+  const wallet = useAnchorWallet();
+  const isWalletConnected = !!wallet?.publicKey;
 
   return (
     <>
-      <button onClick={() => setIsModalOpen(true)}>Mint now</button>
+      <Countdown />
+      {isDropActive && (
+        <button onClick={() => setIsModalOpen(true)}>Mint now!</button>
+      )}
       <ReactModal
         isOpen={isModalOpen}
         onRequestClose={() => setIsModalOpen(false)}
         contentLabel="Mint Modal"
         shouldCloseOnOverlayClick={false}
       >
+        {isWalletConnected ? (
+          <button onClick={console.log}>Mint now!</button>
+        ) : (
+          <WalletMultiButton />
+        )}
         <button onClick={() => setIsModalOpen(false)}>Cancel</button>
       </ReactModal>
     </>
