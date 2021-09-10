@@ -1,5 +1,6 @@
 import { CSSProperties } from 'react'
 import '../styles/header.css'
+import WalletButton from './WalletButton'
 
 const Header = () => {
 	const header: CSSProperties = {
@@ -21,32 +22,13 @@ const Header = () => {
 	const wallet: CSSProperties = {
 		position: 'relative'
 	}
-	const walletButton: CSSProperties = {
-		display: 'flex',
-		flexDirection: 'row',
-		justifyContent: 'center',
-		alignItems: 'center',
-		textAlign: 'center',
-		padding: '24px',
-		background: '#18acff',
-		border: '2px solid rgba(0,0,0,.1)',
-		boxSizing: 'border-box',
-		borderRadius: '16px',
-		fontStyle: 'normal',
-		fontWeight: 700,
-		fontSize: '20px',
-		lineHeight: '24px',
-		color: '#fff',
-		marginLeft: '32px',
-		maxHeight: '72px'
-	}
 	return (
 		<div style={header}>
 			<div style={buttonHeader}>
 				<a href="https://twitter.com" style={buttons}>twitter</a>
 				<a href="https://discord.com" style={buttons}>Discord</a>
 				<div style={wallet}>
-					<div style={walletButton}>Wallet</div>
+					<WalletButton />
 				</div>
 			</div>
 			<h1 className="title">ZebraPunk</h1>
