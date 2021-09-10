@@ -1,8 +1,10 @@
 import { CSSProperties } from "react";
 import "../styles/header.css";
+import Mint from "./Mint/Mint";
 import WalletButton from "./WalletButton";
 
 const Header = () => {
+  const soldOut: boolean = false;
 
   const header: CSSProperties = {
     position: "relative",
@@ -42,6 +44,7 @@ const Header = () => {
         randomly generated with more than 90+ hand drawn traits!
       </h3>
       <p className="text text-caption">Vamos a vender fleje</p>
+      {soldOut ? <p>Sold out!</p> : <Mint />}
       <div className="bottom-image" />
     </div>
   );
