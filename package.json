@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@project-serum/anchor": "^0.15.0",
     "@solana/wallet-adapter-base": "^0.5.2",
     "@solana/wallet-adapter-react": "^0.9.2",
     "@solana/wallet-adapter-react-ui": "^0.1.2",
