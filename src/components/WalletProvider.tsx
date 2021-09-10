@@ -9,16 +9,16 @@ import { clusterApiUrl } from "@solana/web3.js";
 import { SOLANA_NETWORK_ENV } from "../utils/constants";
 
 interface WalletProviderProps {
-    children: ReactNode
+  children: ReactNode;
 }
 
-const Wallet = ({children}: WalletProviderProps) => {
+const Wallet = ({ children }: WalletProviderProps) => {
   const endpoint = useMemo(() => clusterApiUrl(SOLANA_NETWORK_ENV), []);
   const wallets = useMemo(() => [getPhantomWallet()], []);
 
   return (
     <ConnectionProvider endpoint={endpoint}>
-      <WalletProvider wallets={wallets} autoConnect>
+      <WalletProvider wallets={wallets}>
         <WalletModalProvider featuredWallets={1}>
           {children}
         </WalletModalProvider>

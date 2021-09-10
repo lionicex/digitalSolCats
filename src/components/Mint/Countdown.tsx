@@ -11,10 +11,7 @@ const CountdownWrapper = () => {
     hours,
     minutes,
     seconds,
-    completed,
   }: CountdownRenderProps) => {
-    if (completed) setIsDropActive(true);
-
     return (
       <span>
         The race begins in {days !== 0 ? `${days} days ` : ""}
@@ -25,7 +22,11 @@ const CountdownWrapper = () => {
 
   return (
     <>
-      <Countdown date={CANDY_MACHINE_START_TIME} renderer={renderer} />
+      <Countdown
+        onComplete={() => setIsDropActive(true)}
+        date={CANDY_MACHINE_START_TIME}
+        renderer={renderer}
+      />
     </>
   );
 };

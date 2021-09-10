@@ -21,7 +21,7 @@ const Home = (_: RouteComponentProps) => {
   const setIsDropSoldOut = useSetRecoilState(isDropSoldOutState);
   const setCMItems = useSetRecoilState(CMItemsState);
   useEffect(() => {
-    if (!wallet?.publicKey) return;
+    if (!wallet) return;
     getCandyMachineState(wallet).then((state) => {
       setIsCMStateLoaded(true);
       setIsDropSoldOut(state.isSoldOut);
@@ -30,7 +30,7 @@ const Home = (_: RouteComponentProps) => {
         redeemed: state.itemsRedeemed,
       });
     });
-  }, [wallet]);
+  }, [wallet, setIsCMStateLoaded, setIsDropSoldOut, setCMItems]);
 
   return (
     <>

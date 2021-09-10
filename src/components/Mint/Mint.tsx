@@ -1,11 +1,12 @@
 import { useAnchorWallet } from "@solana/wallet-adapter-react";
-import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 import { useState } from "react";
 import ReactModal from "react-modal";
+import { toast } from "react-toastify";
 import { useRecoilValue } from "recoil";
 import "../../styles/mint.css";
 import { isDropActiveState } from "../../utils/atoms";
 import Countdown from "./Countdown";
+import MintModalContent from "./MintModalContent";
 
 ReactModal.setAppElement("#root");
 ReactModal.defaultStyles.overlay = {
@@ -33,25 +34,23 @@ const Mint = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const isDropActive = useRecoilValue(isDropActiveState);
   const wallet = useAnchorWallet();
-  const isWalletConnected = !!wallet?.publicKey;
+
+  const openModal = () => {
+    if (!wallet) toast.error("Connect your wallet first!");
+    else setIsModalOpen(true);
+  };
 
   return (
     <>
       <Countdown />
-      {isDropActive && (
-        <button onClick={() => setIsModalOpen(true)}>Mint now!</button>
-      )}
+      {isDropActive && <button onClick={() => openModal()}>Mint now!</button>}
       <ReactModal
         isOpen={isModalOpen}
         onRequestClose={() => setIsModalOpen(false)}
         contentLabel="Mint Modal"
         shouldCloseOnOverlayClick={false}
       >
-        {isWalletConnected ? (
-          <button onClick={console.log}>Mint now!</button>
-        ) : (
-          <WalletMultiButton />
-        )}
+        <MintModalContent />
         <button onClick={() => setIsModalOpen(false)}>Cancel</button>
       </ReactModal>
     </>

@@ -29,6 +29,10 @@ export const CANDY_MACHINE_CONFIG_ACCOUNT_ID = new PublicKey(
   process.env.REACT_APP_CANDY_MACHINE_CONFIG_ACCOUNT_ID!
 );
 
+export const CANDY_MACHINE_TREASURY_WALLET_ID = new PublicKey(
+  process.env.REACT_APP_CANDY_MACHINE_TREASURY_WALLET_ID!
+);
+
 export const CANDY_MACHINE_START_TIME = new Date(
   parseInt(process.env.REACT_APP_CANDY_MACHINE_START_DATE!) * 1000
 );
