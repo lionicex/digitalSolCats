@@ -1,5 +1,6 @@
 import { CSSProperties } from 'react'
 import '../styles/header.css'
+import Countdown from './Countdown'
 import WalletButton from './WalletButton'
 
 const Header = () => {
@@ -35,6 +36,7 @@ const Header = () => {
 			<h3 className="subtitle">10,000 cute & cruel zebras living on the Solana lands. Each of them are randomly
 				generated with more than 90+ hand drawn traits!</h3>
 			<p className="text text-caption">Vamos a vender fleje</p>
+			<Countdown />
 			<div className="bottom-image"/>
 		</div>
 	)
