@@ -1,14 +1,11 @@
-import { Router } from "@reach/router";
 import { ToastContainer } from "react-toastify";
 import Providers from "./providers";
-import Home from "./views/Home";
+import Router from "./router";
 
 const App = () => {
   return (
     <Providers>
-      <Router>
-        <Home path="/" />
-      </Router>
+      <Router />
       <ToastContainer
         position="top-center"
         hideProgressBar={true}
