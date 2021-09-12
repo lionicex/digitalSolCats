@@ -1,9 +1,11 @@
+import { useRecoilValue } from "recoil";
 import "../styles/header.css";
+import { isSoldOutState } from "../utils/atoms";
 import Mint from "./Mint/Mint";
 import WalletButton from "./WalletButton";
 
 const Header = () => {
-  const soldOut: boolean = false;
+  const isSoldOut: boolean = useRecoilValue(isSoldOutState);
   return (
     <div className="header">
       <div className="button-header">
@@ -58,7 +60,7 @@ const Header = () => {
           generated with more than 30+ hand drawn traits!{" "}
         </h3>
         <p className="text-header text-caption-header">Catch the Arlequin!</p>
-        {soldOut ? <p>Sold out!</p> : <Mint />}
+        {isSoldOut ? <p>Sold out!</p> : <Mint />}
       </div>
       <div className="bottom-image-header" />
     </div>

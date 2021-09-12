@@ -2,21 +2,15 @@ import { Wallet } from "@project-serum/anchor";
 import { useAnchorWallet } from "@solana/wallet-adapter-react";
 import { useState } from "react";
 import { useRecoilState, useRecoilValue } from "recoil";
-import {
-  CMItemsState,
-  isCMStateLoadedState,
-  isDropSoldOutState,
-} from "../../utils/atoms";
+import { checkingSoldOutState, isSoldOutState } from "../../utils/atoms";
 import { mintOneToken } from "../../utils/candyMachine";
-import { CMItems } from "../../utils/types";
 import Loader from "./Loader";
 
 const MintModalContent = () => {
   const [isMinting, setIsMinting] = useState(false);
   const wallet = useAnchorWallet() as Wallet;
-  const { available, redeemed }: CMItems = useRecoilValue(CMItemsState);
-  const isCMStateLoaded = useRecoilValue(isCMStateLoadedState);
-  const [isDropSoldOut, setDropSoldOut] = useRecoilState(isDropSoldOutState);
+  const isCheckingSoldOut = useRecoilValue(checkingSoldOutState);
+  const [isSoldOut, setIsSoldOut] = useRecoilState(isSoldOutState);
 
   const mint = async () => {
     setIsMinting(true);
@@ -29,13 +23,9 @@ const MintModalContent = () => {
 
   return (
     <>
-      {!isCMStateLoaded && <Loader />}
-      {isDropSoldOut && <p>Sold out!</p>}
-      {isCMStateLoaded && !isDropSoldOut && (
+      {isCheckingSoldOut && <Loader />}
+      {!isCheckingSoldOut && (
         <div>
-          <p>
-            {available - redeemed}/{available} left!
-          </p>
           <button onClick={() => mint()}>Mint now!</button>
         </div>
       )}

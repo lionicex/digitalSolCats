@@ -1,6 +1,6 @@
 import * as anchor from "@project-serum/anchor";
 import { MintLayout, Token, TOKEN_PROGRAM_ID } from "@solana/spl-token";
-import { PublicKey, Keypair } from "@solana/web3.js";
+import { Keypair } from "@solana/web3.js";
 import {
   CANDY_MACHINE_CONFIG_ACCOUNT_ID,
   CANDY_MACHINE_PROGRAM_ID,
@@ -10,22 +10,17 @@ import {
   SPL_ASSOCIATED_TOKEN_ACCOUNT_PROGRAM_ID,
   TOKEN_METADATA_PROGRAM_ID,
 } from "./constants";
-import { CandyMachineState } from "./types";
 
-export const getCandyMachineState = async (
+export const checkDropSoldOut = async (
   wallet: anchor.Wallet
-): Promise<CandyMachineState> => {
+): Promise<boolean> => {
   const program = await loadAnchorProgram(wallet);
   const state: any = await program.account.candyMachine.fetch(
     CANDY_MACHINE_STATE_ACCOUNT_ID
   );
   const itemsAvailable = state.data.itemsAvailable.toNumber();
   const itemsRedeemed = state.itemsRedeemed.toNumber();
-  return {
-    isSoldOut: itemsAvailable === itemsRedeemed,
-    itemsAvailable,
-    itemsRedeemed,
-  };
+  return itemsAvailable === itemsRedeemed;
 };
 
 export const mintOneToken = async (wallet: anchor.Wallet): Promise<string> => {
