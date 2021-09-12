@@ -1,5 +1,5 @@
 .FAQ {
-  margin-top: 96px;
+  margin-top: 200px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -15,21 +15,19 @@
 .FAQ-Title {
   align-self: center;
   text-align: center;
-  margin: 8px;
 }
 
-.Text,
-.Text-title {
+.Text-faq,
+.Text-title-faq {
   font-size: 48px;
   line-height: 58px;
 }
 
-.Text {
-  font-family: Balsamiq Sans;
+.Text-faq {
+  font-family: acremedium;
   font-style: normal;
   font-weight: 700;
-  color: #4e103c;
-  margin-bottom: 0;
+  color: #314375;
 }
 
 .FAQ-List,
@@ -41,11 +39,11 @@
 }
 
 .FAQ-List {
-  margin: 48px;
+  margin: 100px314375;
 }
 
 .Question {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #314375;
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -75,8 +73,9 @@ h3 {
 .QuestionAnswer {
   margin-top: 12px;
   text-align: left;
+  color: #314375;
 }
-.Text-body {
+.Text-body-faq {
   font-size: 24px;
   line-height: 29px;
 }

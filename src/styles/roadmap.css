@@ -1,29 +1,29 @@
 .Roadmap {
-  margin: 48px;
+  margin: 100px;
   display: flex;
   flex-direction: column;
 }
-.Text,
-.Text-title {
+
+.Text-roadmap,
+.Text-title-roadmap {
   font-size: 48px;
   line-height: 58px;
+  margin-bottom: 100px;
 }
-.Text {
-  font-family: Balsamiq Sans;
+
+.Text-roadmap {
+  font-family: acremedium;
   font-style: normal;
   font-weight: 700;
-  color: #4e103c;
-  margin-bottom: 0;
+  color: #314375;
+  margin-bottom: 100px;
 }
-*,
-:after,
-:before {
-  box-sizing: border-box;
-}
+
 .RoadmapRow {
   display: flex;
   overflow: hidden;
 }
+
 .RoadmapCard-Root {
   display: flex;
   flex: 1 1;
@@ -31,53 +31,61 @@
   align-items: flex-start;
   padding: 32px;
   background: #fff;
-  border: 8px solid #cc8ead;
+  border: 8px solid #314375;
   box-sizing: border-box;
   border-radius: 32px;
 }
+
 .RoadmapCard-content,
 .RoadmapCard-title {
-  font-family: Balsamiq Sans;
+  font-family: acremedium;
   font-style: normal;
-  color: #4e103c;
+  color: #ffffff;
 }
+
 .RoadmapCard-title {
   font-weight: 700;
   font-size: 37px;
   line-height: 44px;
 }
+
 .RoadmapCard-content {
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
 }
+
 .RoadmapLine {
   display: flex;
   width: 120px;
   justify-content: center;
 }
+
 .RoadmapLineCenter {
   width: 8px;
-  background-color: #cc8ead;
+  background-color: #314375;
   height: 100%;
   display: flex;
   align-items: center;
   overflow: visible;
 }
+
 .RoadmapLineDot {
   position: absolute;
   margin-left: -18px;
   width: 44px;
   height: 44px;
   border-radius: 22px;
-  border: 8px solid #cc8ead;
+  border: 8px solid #314375;
   background-color: #fff;
 }
+
 .RoadmapEmpty {
   flex: 1 1;
   padding: 32px;
   border: 8px solid transparent;
 }
+
 .RoadmapRowFlip {
   flex-direction: row-reverse;
 }
@@ -88,8 +96,9 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 32px;
-  background: #fff;
-  border: 8px solid #cc8ead;
+  background: #314375;
+  border: 0px solid #314375;
   box-sizing: border-box;
-  border-radius: 32px;
+  border-radius: 10px;
+  margin: 8px;
 }
