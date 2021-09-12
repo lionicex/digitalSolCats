@@ -1,17 +1,14 @@
 import { Router } from "@reach/router";
 import { ToastContainer } from "react-toastify";
-import { RecoilRoot } from "recoil";
-import WalletProvider from "./components/WalletProvider";
+import Providers from "./providers";
 import Home from "./views/Home";
 
 const App = () => {
   return (
-    <RecoilRoot>
-      <WalletProvider>
-        <Router>
-          <Home path="/" />
-        </Router>
-      </WalletProvider>
+    <Providers>
+      <Router>
+        <Home path="/" />
+      </Router>
       <ToastContainer
         position="top-center"
         hideProgressBar={true}
@@ -19,7 +16,7 @@ const App = () => {
         limit={1}
         theme="colored"
       />
-    </RecoilRoot>
+    </Providers>
   );
 };
 
