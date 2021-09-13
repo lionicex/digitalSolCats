@@ -105,7 +105,7 @@ const Mint = () => {
         <Countdown />
       ) : (
         <button disabled={isMinting} onClick={() => mint()} className="mint-button">
-          Mint one Solf
+          Mint a Golf
         </button>
       )}
     </>

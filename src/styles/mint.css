@@ -1,20 +1,18 @@
 .mint-button {
   padding: 30px;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 24px;
   border-radius: 10px;
   border: none;
-  background-color: var(--harlequin-blue);
-  color: var(--white-color);
+  background-color: var(--harlequin-yellow);
+  color: var(--harlequin-blue);
   cursor: pointer;
-  transition: transform 0.5s ease-out;
-  box-shadow: 2px 2px 4px 1px #0000009f;
   max-height: 50px;
   line-height: 24px;
   display: flex;
   align-items: center;
 }
 
-.mint-button:hover {
-  transform: translateY(-4px);
+.mint-button:not([disabled]):hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15) 0 0);
 }
