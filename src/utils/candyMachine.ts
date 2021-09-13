@@ -168,3 +168,95 @@ const createAssociatedTokenAccountInstruction = (
     data: Buffer.from([]),
   });
 };
+
+export const confirmTransactionSignature = async (
+  txId: anchor.web3.TransactionSignature,
+  timeout: number,
+  commitment: anchor.web3.Commitment = "recent",
+  queryStatus = false
+): Promise<anchor.web3.SignatureStatus | null | void> => {
+  let done = false;
+  let status: anchor.web3.SignatureStatus | null | void = {
+    slot: 0,
+    confirmations: 0,
+    err: null,
+  };
+  let subId = 0;
+  status = await new Promise(async (resolve, reject) => {
+    setTimeout(() => {
+      if (done) {
+        return;
+      }
+      done = true;
+      console.log("Rejecting for timeout...");
+      reject({ timeout: true });
+    }, timeout);
+    try {
+      subId = RPC_CONNECTION.onSignature(
+        txId,
+        (result: any, context: any) => {
+          done = true;
+          status = {
+            err: result.err,
+            slot: context.slot,
+            confirmations: 0,
+          };
+          if (result.err) {
+            console.log("Rejected via websocket", result.err);
+            reject(status);
+          } else {
+            console.log("Resolved via websocket", result);
+            resolve(status);
+          }
+        },
+        commitment
+      );
+    } catch (e) {
+      done = true;
+      console.error("WS error in setup", txId, e);
+    }
+    while (!done && queryStatus) {
+      // eslint-disable-next-line no-loop-func
+      (async () => {
+        try {
+          const signatureStatuses = await RPC_CONNECTION.getSignatureStatuses([
+            txId,
+          ]);
+          status = signatureStatuses && signatureStatuses.value[0];
+          if (!done) {
+            if (!status) {
+              console.log("REST null result for", txId, status);
+            } else if (status.err) {
+              console.log("REST error for", txId, status);
+              done = true;
+              reject(status.err);
+            } else if (!status.confirmations) {
+              console.log("REST no confirmations for", txId, status);
+            } else {
+              console.log("REST confirmation for", txId, status);
+              done = true;
+              resolve(status);
+            }
+          }
+        } catch (e) {
+          if (!done) {
+            console.log("REST connection error: txid", txId, e);
+          }
+        }
+      })();
+      await sleep(2000);
+    }
+  });
+
+  //@ts-ignore
+  if (RPC_CONNECTION._signatureSubscriptions[subId]) {
+    RPC_CONNECTION.removeSignatureListener(subId);
+  }
+  done = true;
+  console.log("Returning status", status);
+  return status;
+};
+
+const sleep = (ms: number): Promise<void> => {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+};

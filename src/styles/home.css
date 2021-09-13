@@ -1,0 +1,7 @@
+@import url("./header.css");
+@import url("./countdown.css");
+@import url("./mint.css");
+
+section {
+  min-height: 100vh;
+}

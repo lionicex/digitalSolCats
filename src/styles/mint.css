@@ -1,4 +1,20 @@
-.ReactModal__Body--open {
-  height: 100%;
-  overflow: hidden;
+.mint-button {
+  padding: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--harlequin-blue);
+  color: var(--white-color);
+  cursor: pointer;
+  transition: transform 0.5s ease-out;
+  box-shadow: 2px 2px 4px 1px #0000009f;
+  max-height: 50px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.mint-button:hover {
+  transform: translateY(-4px);
 }

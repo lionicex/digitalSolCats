@@ -6,7 +6,7 @@ const Roadmap = () => {
   const roadmapCard = { color: "inherit", textDecoration: "underline" };
   return (
     <>
-      <div className="Roadmap">
+      <section className="Roadmap">
         <h2 className="Text-roadmap Text-title-roadmap" style={roadmap}>
           Roadmap
         </h2>
@@ -87,7 +87,7 @@ const Roadmap = () => {
           </div>
           <div className="RoadmapEmpty"></div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

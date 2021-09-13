@@ -6,12 +6,6 @@
   align-self: stretch;
 }
 
-*,
-:after,
-:before {
-  box-sizing: border-box;
-}
-
 .FAQ-Title {
   align-self: center;
   text-align: center;

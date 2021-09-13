@@ -3,6 +3,7 @@ import Roadmap from "../components/Roadmap";
 import Team from "../components/Team";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
+import "../styles/home.css";
 import { RouteComponentProps } from "@reach/router";
 import { useAnchorWallet } from "@solana/wallet-adapter-react";
 import { useEffect } from "react";
@@ -27,10 +28,10 @@ const Home = (_: RouteComponentProps) => {
   return (
     <>
       <Header />
-      <Roadmap />
+      {/* <Roadmap />
       <Team />
       <FAQ />
-      <Footer />
+      <Footer /> */}
     </>
   );
 };

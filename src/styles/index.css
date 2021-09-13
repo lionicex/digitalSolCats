@@ -1,3 +1,13 @@
+:root {
+  --harlequin-yellow: #e5c900;
+  --harlequin-blue: #314375;
+  --harlequin-green: #1eb6ba;
+  --harlequin-red: #b62008;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --countdown-border: #444;
+}
+
 @font-face {
   font-family: "acremedium";
   src: url("/src/static/font/acre-medium-webfont.woff2") format("woff2"),
@@ -14,6 +24,9 @@
 
 body {
   margin: 0;
+  font-family: acremedium;
+  font-weight: 400;
+  color: var(--white-color);
 }
 
 a {

@@ -4,7 +4,7 @@ const center = {
 };
 const Team = () => {
   return (
-    <div className="TeamRoot">
+    <section className="TeamRoot">
       <h2 className="Text-team Text-title-team" style={center}>
         The Team
       </h2>
@@ -37,7 +37,7 @@ const Team = () => {
           <p className="Text-team Text-caption-team">ARTIST</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
