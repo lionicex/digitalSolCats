@@ -22,8 +22,7 @@ const CountdownWrapper = () => {
     <>
       <Countdown
         onComplete={() => setIsDropActive(true)}
-        date={new Date("19 sep 2021 20:50")}
-        // date={CANDY_MACHINE_START_TIME}
+        date={CANDY_MACHINE_START_TIME}
         renderer={renderer}
       />
     </>
