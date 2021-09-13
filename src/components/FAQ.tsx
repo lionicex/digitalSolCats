@@ -2,7 +2,7 @@ import "../styles/faq.css";
 
 const FAQ = () => {
   return (
-    <div className="FAQ">
+    <section className="FAQ">
       <h2 className="Text-faq Text-title-faq FAQ-Title">
         Frequently Asked Questions
       </h2>
@@ -64,7 +64,7 @@ const FAQ = () => {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default FAQ;

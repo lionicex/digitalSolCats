@@ -9,10 +9,7 @@ const WalletButton = () => {
   const button = !connected ? (
     <WalletMultiButton className="wallet-button" />
   ) : (
-    <WalletDisconnectButton
-      className="wallet-button"
-      style={{ background: "#C20114" }}
-    />
+    <WalletDisconnectButton className="wallet-button disconnect" />
   );
 
   return <>{button}</>;
