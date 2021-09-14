@@ -2,7 +2,7 @@ import { useRecoilValue } from "recoil";
 import { isSoldOutState } from "../utils/atoms";
 import { ReactComponent as TwitterLogo } from "../static/media/twitter.svg";
 import { ReactComponent as DiscordLogo } from "../static/media/discord.svg";
-import harlequinImage from "../static/media/harlequin.png";
+import solanaImage from "../static/media/solana.png";
 import Mint from "./Mint/Mint";
 import WalletButton from "./WalletButton";
 
@@ -30,11 +30,10 @@ const Header = () => {
 				<h3>
 					10,000 randomly generated Golf cars driving down the Solana Roads{" "}
 				</h3>
-				<img src={harlequinImage} alt="Harlequin"/>
-				<p>Catch a Harlequin<br/><span>Only 264 IRL, only 264 NFTs</span></p>
+				<img src={solanaImage} alt="Harlequin"/>
 			</div>
 			<div className="header-mint">
-				{isSoldOut ? <p>Sold out!</p> : <Mint/>}
+				{!isSoldOut ? <p className="sold-out">Coming soon!</p> : <Mint/>}
 			</div>
 		</section>
 	);

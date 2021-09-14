@@ -1,11 +1,11 @@
 import { Router } from "@reach/router";
-import Home from "./Views/Home";
+import Home from "./views/Home";
 
 const RouterWrapper = () => {
-	return (
-		<Router>
-			<Home path="/"/>
-		</Router>
-	);
+  return (
+    <Router>
+      <Home path="/" />
+    </Router>
+  );
 };
 export default RouterWrapper;

@@ -22,6 +22,7 @@
 .RoadmapRow {
   display: flex;
   overflow: hidden;
+  align-self: flex-start;
 }
 
 .RoadmapCard-Root {
@@ -87,7 +88,7 @@
 }
 
 .RoadmapRowFlip {
-  flex-direction: row-reverse;
+  align-self: flex-end;
 }
 
 .RoadmapCard-Root {

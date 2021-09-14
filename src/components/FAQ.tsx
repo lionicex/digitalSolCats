@@ -10,23 +10,22 @@ const FAQ = () => {
         <div className="Question">
           <div className="Question-Row">
             <h3 className="Text-faq Text-subtitle-faq QuestionTitle">
-              What is Piggy Sol Gang?
+              What is Golf Sol?
             </h3>
           </div>
           <p className="Text-faq Text-body-faq QuestionAnswer">
-            They are algorithmically generated 10,000 cute &amp; cruel piggies
-            who are living on the #Solana blockchain.
+            Golf Sol is a collection of 10,000 randomly generated classic Golf
+            cars running on the Solana Roads.
           </p>
         </div>
         <div className="Question">
           <div className="Question-Row">
             <h3 className="Text-faq Text-subtitle QuestionTitle">
-              When I will get my Piggy after the mint?
+              How long will it take to get my Golf?
             </h3>
           </div>
           <p className="Text-faq Text-body-faq QuestionAnswer">
-            Your Piggy will be sent to your wallet right after the minting which
-            might take few minutes.
+            Your Golf will be sent immediately after the mint is completed.
           </p>
         </div>
         <div className="Question">
@@ -36,8 +35,7 @@ const FAQ = () => {
             </h3>
           </div>
           <p className="Text-faq Text-body-faq QuestionAnswer">
-            We will be using Sollet and Phantom wallet for the website
-            connection.
+            You may use either Phantom or Solflare wallets for minting.
           </p>
         </div>
         <div className="Question">
@@ -47,8 +45,8 @@ const FAQ = () => {
             </h3>
           </div>
           <p className="Text-faq Text-body-faq QuestionAnswer">
-            We are launching on Saturday, 4th September at 8 PM GMT+1. You can
-            get the latest updates from our Twitter &amp; Discord.
+            The launch date will be public soon. For now check out our twitter
+            account for more information.
           </p>
         </div>
         <div className="Question">
@@ -58,9 +56,9 @@ const FAQ = () => {
             </h3>
           </div>
           <p className="Text-faq Text-body-faq QuestionAnswer">
-            We are a team of three friends/ex-colleagues from different parts of
-            the world, who left their corporate lives behind and fully committed
-            to make Piggy Sol Gang a reality!
+            We are a team of three different people who share their love for
+            technology and decided to commit themselves to bring the most
+            special cars of the history to Solana.
           </p>
         </div>
       </div>
