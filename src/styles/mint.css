@@ -16,3 +16,8 @@
 .mint-button:not([disabled]):hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.15) 0 0);
 }
+
+.mint-button:disabled {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0 0);
+  cursor: progress;
+}
