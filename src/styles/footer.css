@@ -8,3 +8,11 @@
 .Home-social-buttons {
   margin-left: 32px;
 }
+
+.social-button.social-button-footer svg path {
+  fill: var(--harlequin-blue);
+}
+
+.social-button.social-button-footer {
+  padding: 8px;
+}

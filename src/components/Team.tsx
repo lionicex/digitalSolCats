@@ -1,4 +1,7 @@
 import "../styles/team.css";
+import rustyImage from "../static/media/rusty.png";
+import whiteGTIImage from "../static/media/whiteGTI.png";
+
 const center = {
   alignSelf: "center",
 };
@@ -12,28 +15,28 @@ const Team = () => {
         <div className="TeamMember">
           <img
             className="TeamImage"
-            alt="Piggy Bank"
-            src="/static/media/team-pb.44ebe4b3.png"
+            alt="Golhalf"
+            src={rustyImage}
           />
-          <h3 className="Text-team Text-subtitle-team">Piggy Bank</h3>
+          <h3 className="Text-team Text-subtitle-team">Golhalf</h3>
           <p className="Text-team Text-caption-team">DEVELOPER</p>
         </div>
         <div className="TeamMember">
           <img
             className="TeamImage"
-            alt="Piggy Capone"
-            src="/static/media/team-pc.5ba6444d.png"
+            alt="Solf GTI"
+            src={whiteGTIImage}
           />
-          <h3 className="Text-team Text-subtitle-team">Piggy Capone</h3>
+          <h3 className="Text-team Text-subtitle-team">Solf GTI</h3>
           <p className="Text-team Text-caption-team">PRODUCT</p>
         </div>
         <div className="TeamMember">
           <img
             className="TeamImage"
-            alt="Pigasso"
+            alt="Golf GART"
             src="/static/media/team-p.b63a984e.png"
           />
-          <h3 className="Text-team Text-subtitle-team">Pigasso</h3>
+          <h3 className="Text-team Text-subtitle-team">Golf GART</h3>
           <p className="Text-team Text-caption-team">ARTIST</p>
         </div>
       </div>
