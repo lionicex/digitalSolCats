@@ -1,5 +1,5 @@
 import { atom } from "recoil";
-import { CANDY_MACHINE_START_TIME } from "./constants";
+import { CANDY_MACHINE_START_TIME, IS_DROP_SOLD_OUT } from "./constants";
 
 export const isDropActiveState = atom<boolean>({
   key: "isDropActiveState",
@@ -12,6 +12,6 @@ export const checkingSoldOutState = atom<boolean>({
 });
 
 export const isSoldOutState = atom<boolean>({
-  key: "isDropSoldOut",
-  default: false,
+  key: "isSoldOut",
+  default: IS_DROP_SOLD_OUT,
 });
