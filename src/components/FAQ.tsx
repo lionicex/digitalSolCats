@@ -20,7 +20,7 @@ const FAQ = () => {
         </div>
         <div className="Question">
           <div className="Question-Row">
-            <h3 className="Text Text-subtitle QuestionTitle">
+            <h3 className="Text-faq Text-subtitle QuestionTitle">
               When I will get my Piggy after the mint?
             </h3>
           </div>
