@@ -5,3 +5,16 @@
 section {
   min-height: 100vh;
 }
+
+.button {
+  padding: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  line-height: 24px;
+  max-height: 50px;
+  display: flex;
+  align-items: center;
+}

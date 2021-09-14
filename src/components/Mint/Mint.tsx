@@ -104,7 +104,7 @@ const Mint = () => {
       {!isDropActive ? (
         <Countdown />
       ) : (
-        <button disabled={isMinting} onClick={() => mint()} className="mint-button">
+        <button disabled={isMinting} onClick={() => mint()} className="button mint-button">
           Mint a Golf
         </button>
       )}

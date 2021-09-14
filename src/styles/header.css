@@ -58,15 +58,8 @@
 }
 
 .wallet-button {
-  padding: 30px;
   background: var(--harlequin-green);
-  border-radius: 10px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  color: var(--harlequin-yellow);
-  max-height: 50px;
+  color: var(--white-color);
 }
 
 .wallet-button.disconnect {

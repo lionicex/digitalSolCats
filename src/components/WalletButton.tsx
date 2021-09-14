@@ -7,9 +7,9 @@ import {
 const WalletButton = () => {
   const { connected } = useWallet();
   const button = !connected ? (
-    <WalletMultiButton className="wallet-button" />
+    <WalletMultiButton className="button wallet-button" />
   ) : (
-    <WalletDisconnectButton className="wallet-button disconnect" />
+    <WalletDisconnectButton className="button wallet-button disconnect" />
   );
 
   return <>{button}</>;
