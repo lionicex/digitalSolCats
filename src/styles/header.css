@@ -1,0 +1,133 @@
+.header {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+      to right,
+      var(--harlequin-blue) 0%,
+      var(--harlequin-blue) 50%,
+      var(--harlequin-yellow) 50%,
+      var(--harlequin-yellow) 100%
+    ),
+    linear-gradient(
+      to right,
+      var(--harlequin-green) 0%,
+      var(--harlequin-green) 50%,
+      var(--harlequin-red) 50%,
+      var(--harlequin-red) 100%
+    );
+  background-size: 100% 50%;
+  background-position: center top, center bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navbar {
+  width: 100%;
+  padding: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar .logo {
+  line-height: 60px;
+}
+
+.navbar .name {
+  margin: 0;
+  font-size: 48px;
+  font-weight: bold;
+  vertical-align: middle;
+  flex-wrap: wrap;
+}
+
+.social-button-group {
+  display: flex;
+  align-items: center;
+}
+
+.social-button-group > .social-button {
+  margin-left: 1vmax;
+  display: flex;
+  align-items: center;
+}
+
+.social-button svg path {
+  fill: var(--harlequin-blue);
+}
+
+.wallet-button {
+  padding: 30px;
+  background: var(--harlequin-green);
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--harlequin-yellow);
+  max-height: 50px;
+}
+
+.wallet-button.disconnect {
+  background: var(--harlequin-red);
+}
+
+.car-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.car-wrapper h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.car-wrapper p {
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.car-wrapper img {
+  width: 50vw;
+  height: auto;
+}
+
+.header-mint {
+  width: 100%;
+  padding: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 772px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar .logo {
+    padding-bottom: 10px;
+  }
+
+  .social-button svg path {
+    fill: var(--harlequin-yellow);
+  }
+}
+
+@media (max-width: 438px) {
+  .header {
+    min-height: 100vh;
+  }
+}
+
+@media (max-height: 750px) {
+  .car-wrapper img {
+    display: none;
+  }
+}

@@ -1,0 +1,10 @@
+.Footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home-social-buttons {
+  margin-left: 32px;
+}
