@@ -12,7 +12,7 @@ const Header = () => {
     <section className="header">
       <div className="navbar">
         <div className="logo">
-          <p className="name">Solf MK 3</p>
+          <p className="name">Golf Sol</p>
         </div>
         <div className="social-button-group">
           <a className="social-button" href="https://twitter.com/piggySolGang/">
