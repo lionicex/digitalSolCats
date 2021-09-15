@@ -15,7 +15,8 @@ const Header = () => {
 					<p className="name">Golf Sol</p>
 				</div>
 				<div className="social-button-group">
-					<a rel="noreferrer" className="social-button" target="_blank" href="https://twitter.com/golfsolnft/">
+					<a rel="noreferrer" className="social-button" target="_blank"
+					   href="https://twitter.com/golfsolnft/">
 						<TwitterLogo/>
 					</a>
 					<a rel="noreferrer" className="social-button" target="_blank" href="https://discord.gg/UCH5NqsTQp">

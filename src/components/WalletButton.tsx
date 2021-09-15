@@ -1,18 +1,15 @@
 import { useWallet } from "@solana/wallet-adapter-react";
-import {
-  WalletDisconnectButton,
-  WalletMultiButton,
-} from "@solana/wallet-adapter-react-ui";
+import { WalletDisconnectButton, WalletMultiButton, } from "@solana/wallet-adapter-react-ui";
 
 const WalletButton = () => {
-  const { connected } = useWallet();
-  const button = !connected ? (
-    <WalletMultiButton className="button wallet-button" />
-  ) : (
-    <WalletDisconnectButton className="button wallet-button disconnect" />
-  );
+	const {connected} = useWallet();
+	const button = !connected ? (
+		<WalletMultiButton className="button wallet-button"/>
+	) : (
+		<WalletDisconnectButton className="button wallet-button disconnect"/>
+	);
 
-  return <>{button}</>;
+	return <>{button}</>;
 };
 
 export default WalletButton;

@@ -1,122 +1,130 @@
 .Roadmap {
-  margin: 100px;
-  display: flex;
-  flex-direction: column;
+	margin: 100px;
+	display: flex;
+	flex-direction: column;
 }
 
 .Text-roadmap,
 .Text-title-roadmap {
-  font-size: 48px;
-  line-height: 58px;
-  margin-bottom: 100px;
+	font-size: 48px;
+	line-height: 58px;
+	margin-bottom: 100px;
 }
 
 .Text-roadmap {
-  font-family: acremedium;
-  font-style: normal;
-  font-weight: 700;
-  color: #314375;
-  margin-bottom: 100px;
+	font-family: acremedium;
+	font-style: normal;
+	font-weight: 700;
+	color: #314375;
+	margin-bottom: 100px;
 }
 
 .RoadmapRow {
-  display: flex;
-  overflow: hidden;
-  align-self: flex-start;
+	width: 100%;
+	align-self: flex-start;
+	display: flex;
+	overflow: hidden;
 }
 
 .RoadmapCard-Root {
-  display: flex;
-  flex: 1 1;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 32px;
-  background: #fff;
-  border: 8px solid #314375;
-  box-sizing: border-box;
-  border-radius: 32px;
+	display: flex;
+	flex: 1 1;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 32px;
+	background: #fff;
+	border: 8px solid #314375;
+	box-sizing: border-box;
+	border-radius: 32px;
 }
 
 .RoadmapCard-content,
 .RoadmapCard-title {
-  font-family: acremedium;
-  font-style: normal;
-  color: #ffffff;
+	font-family: acremedium;
+	font-style: normal;
+	color: #ffffff;
 }
 
 .RoadmapCard-title {
-  font-weight: 700;
-  font-size: 37px;
-  line-height: 44px;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 44px;
+	margin-bottom: 16px;
 }
 
 .RoadmapCard-content {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 29px;
+	color: rgba(255, 255, 255, .7);
 }
 
 .RoadmapLine {
-  display: flex;
-  width: 120px;
-  justify-content: center;
+	display: flex;
+	width: 120px;
+	justify-content: center;
 }
 
 .RoadmapLineCenter {
-  width: 8px;
-  background-color: #314375;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  overflow: visible;
+	width: 8px;
+	background-color: #314375;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	overflow: visible;
 }
 
 .RoadmapLineDot {
-  position: absolute;
-  margin-left: -18px;
-  width: 44px;
-  height: 44px;
-  border-radius: 22px;
-  border: 8px solid #314375;
-  background-color: #fff;
+	position: absolute;
+	margin-left: -18px;
+	width: 44px;
+	height: 44px;
+	border-radius: 22px;
+	border: 8px solid #314375;
+	background-color: #fff;
 }
 
 .RoadmapEmpty {
-  flex: 1 1;
-  padding: 32px;
-  border: 8px solid transparent;
+	flex: 1 1;
+	padding: 32px;
+	border: 8px solid transparent;
 }
 
 .RoadmapRowFlip {
-  align-self: flex-end;
+	align-self: flex-end;
 }
 
 .RoadmapCard-Root {
-  display: flex;
-  flex: 1 1;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 32px;
-  background: #314375;
-  border: 0px solid #314375;
-  box-sizing: border-box;
-  border-radius: 10px;
-  margin: 8px;
+	display: flex;
+	flex: 1 1;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 32px;
+	background: #314375;
+	border: 0px solid #314375;
+	box-sizing: border-box;
+	border-radius: 10px;
+	margin: 8px;
 }
+
 @media (max-width: 1000px) {
 	.RoadmapLineDot {
 		display: none;
 	}
+
 	.RoadmapLineCenter {
 		display: none;
 	}
+
 	.RoadmapRow {
 		display: block;
 	}
-	.RoadmapEmpty{
+
+	.RoadmapEmpty {
 		display: none;
 	}
-	.Roadmap{
+
+	.Roadmap {
 		margin: 5px
 	}
 }

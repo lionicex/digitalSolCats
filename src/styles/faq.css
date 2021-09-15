@@ -1,5 +1,5 @@
 .FAQ {
-	margin: 200px 50px 0 50px;
+	margin: 100px 50px 100px 50px;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -38,7 +38,7 @@
 }
 
 .Question {
-	border-bottom: 1px solid #314375;
+	border-bottom: 1px solid #ddd;
 	padding-top: 24px;
 	padding-bottom: 24px;
 }
@@ -58,6 +58,7 @@
 .QuestionTitle {
 	text-align: left;
 	margin: 0;
+	font-size: 32px;
 }
 
 h3 {
@@ -73,6 +74,7 @@ h3 {
 }
 
 .Text-body-faq {
-	font-size: 24px;
 	line-height: 29px;
+	color: rgba(50, 66, 116, .5);
+	font-size: 20px;
 }
