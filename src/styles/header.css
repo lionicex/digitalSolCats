@@ -99,10 +99,6 @@
   .navbar .logo {
     padding-bottom: 10px;
   }
-
-  .social-button svg path {
-    fill: var(--harlequin-yellow);
-  }
 }
 
 @media (max-width: 438px) {
