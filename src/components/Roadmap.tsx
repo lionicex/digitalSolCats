@@ -14,7 +14,7 @@ const Roadmap = () => {
           <div className="RoadmapCard-Root">
             <div className="RoadmapCard-title">#1 Launch 🚀</div>
             <div className="RoadmapCard-content">
-              Successfully launch 10,000 Golf cars with a fair minting process
+              Successfully launch 5,000 Golf cars with a fair minting process
             </div>
           </div>
         </div>
@@ -36,7 +36,7 @@ const Roadmap = () => {
         </div>
         <div className="RoadmapRow">
           <div className="RoadmapCard-Root">
-            <div className="RoadmapCard-title">#3 More cars on the way!🚗</div>
+            <div className="RoadmapCard-title">#3 More cars on the way! 🚗</div>
             <div className="RoadmapCard-content">
               The Harlequin Golf version may be legendary, but there are more cars waiting to be dropped.
             </div>
