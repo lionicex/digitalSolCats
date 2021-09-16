@@ -1,18 +1,18 @@
 .Footer {
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .Home-social-buttons {
-  margin-left: 32px;
+	margin-left: 32px;
 }
 
 .social-button.social-button-footer svg path {
-  fill: var(--harlequin-blue);
+	fill: var(--harlequin-blue);
 }
 
 .social-button.social-button-footer {
-  padding: 8px;
+	padding: 8px;
 }

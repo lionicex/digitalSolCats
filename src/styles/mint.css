@@ -1,13 +1,13 @@
 .mint-button {
-  background-color: var(--harlequin-green);
-  color: var(--white-color);
+	background-color: var(--harlequin-green);
+	color: var(--white-color);
 }
 
 .mint-button:not([disabled]):hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.15) 0 0);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.15) 0 0);
 }
 
 .mint-button:disabled {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0 0);
-  cursor: progress;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0 0);
+	cursor: progress;
 }
