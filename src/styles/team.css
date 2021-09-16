@@ -8,14 +8,17 @@
 .Text-title-team {
 	font-size: 48px;
 	line-height: 58px;
-}
 
+}
+.Text-title-team{
+	margin-bottom: 100px;
+}
 .Text-team {
 	font-family: acremedium;
 	font-style: normal;
 	font-weight: 700;
 	color: #314375;
-	margin-bottom: 100px;
+
 }
 
 .TeamMembers {
