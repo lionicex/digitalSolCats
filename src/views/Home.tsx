@@ -11,6 +11,7 @@ import Roadmap from "../components/Roadmap";
 import Team from "../components/Team";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
+import HarlequinBanner from "../components/HarlequinBanner";
 
 const Home = (_: RouteComponentProps) => {
 	const wallet = useAnchorWallet() as Wallet;
@@ -29,6 +30,7 @@ const Home = (_: RouteComponentProps) => {
 		<>
 			<Header/>
 			<Roadmap/>
+			<HarlequinBanner />
 			<Team/>
 			<FAQ/>
 			<Footer/>

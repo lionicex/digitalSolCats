@@ -14,7 +14,7 @@ const Roadmap = () => {
 					<div className="RoadmapCard-Root">
 						<div className="RoadmapCard-title">#1 Launch 🚀</div>
 						<div className="RoadmapCard-content">
-							Successfully launch 10,000 Golf cars with a fair minting process
+							Successfully launch 5,000 Golf cars with a fair minting process
 						</div>
 					</div>
 				</div>

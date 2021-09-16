@@ -57,6 +57,20 @@
 	background: var(--harlequin-red);
 }
 
+.wallet-button-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.wallet-button-group span {
+  padding-top: 4px;
+  text-align: center;
+  width: 200px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .car-wrapper {
 	position: absolute;
 	top: 50%;

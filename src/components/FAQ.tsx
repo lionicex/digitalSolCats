@@ -14,7 +14,7 @@ const FAQ = () => {
 						</h3>
 					</div>
 					<p className="Text-faq Text-body-faq QuestionAnswer">
-						Golf Sol is a collection of 10,000 randomly generated classic Golf
+						Golf Sol is a collection of 5,000 randomly generated classic Golf
 						cars running on the Solana Roads.
 					</p>
 				</div>

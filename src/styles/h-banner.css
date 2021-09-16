@@ -1,0 +1,26 @@
+.harlequin-banner {
+  width: 100%;
+  min-height: 200px;
+  background-color: var(--harlequin-green);
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.harlequin-banner img {
+  width: 400px;
+  height: auto;
+  padding-right: 12px;
+}
+
+.harlequin-banner h3 {
+  font-weight: 700;
+  font-size: 40px;
+  margin: 0;
+}
+
+.harlequin-banner p {
+  padding-top: 12px;
+  font-size: 24px;
+}
