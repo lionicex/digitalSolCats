@@ -1,6 +1,7 @@
 @import url("./header.css");
 @import url("./countdown.css");
 @import url("./mint.css");
+@import url("./h-banner.css");
 
 .button {
 	padding: 30px;
