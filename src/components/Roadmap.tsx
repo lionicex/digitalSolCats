@@ -12,7 +12,7 @@ const Roadmap = () => {
 				</h2>
 				<div className="RoadmapRow">
 					<div className="RoadmapCard-Root">
-						<div className="RoadmapCard-title">#1 Launch 🚀</div>
+						<div className="RoadmapCard-title">#1 Launch | 25th September at 20:00 UCT 🚀</div>
 						<div className="RoadmapCard-content">
 							Successfully launch 5,000 Golf cars with a fair minting process
 						</div>
@@ -22,7 +22,7 @@ const Roadmap = () => {
 					<div className="RoadmapCard-Root">
 						<div className="RoadmapCard-title">#2 Marketplaces 🛒</div>
 						<div className="RoadmapCard-content">
-							A few days after launch, you will be able to buy and sell your Golfs on {" "}
+							Right after launch you will be able to buy and sell your Golfs on {" "}
 							<a
 								href="https://digitaleyes.market"
 								style={roadmapDigital}
@@ -38,7 +38,7 @@ const Roadmap = () => {
 					<div className="RoadmapCard-Root">
 						<div className="RoadmapCard-title">#3 More cars on the way!🚗</div>
 						<div className="RoadmapCard-content">
-							The Harlequin Golf version may be legendary, but there are more cars waiting to be dropped.
+							The Harlequin Golf version may be legendary, but there are more cars waiting to be dropped. The best part, you have the power to chose them!
 						</div>
 					</div>
 				</div>

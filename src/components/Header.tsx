@@ -34,7 +34,7 @@ const Header = () => {
 				<img src={solanaImage} alt="Harlequin"/>
 			</div>
 			<div className="header-mint">
-				{!isSoldOut ? <p className="sold-out">Coming soon!</p> : <Mint/>}
+				{isSoldOut ? <p className="sold-out">Sold out!</p> : <Mint/>}
 			</div>
 		</section>
 	);
