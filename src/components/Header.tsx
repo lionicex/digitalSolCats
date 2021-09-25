@@ -2,6 +2,7 @@ import { useRecoilValue } from "recoil";
 import { isSoldOutState } from "../utils/atoms";
 import { ReactComponent as TwitterLogo } from "../static/media/twitter.svg";
 import { ReactComponent as DiscordLogo } from "../static/media/discord.svg";
+import { ReactComponent as InstagramLogo } from "../static/media/instagram.svg";
 import solanaImage from "../static/media/solana.png";
 import Mint from "./Mint/Mint";
 import WalletButton from "./WalletButton";
@@ -21,6 +22,9 @@ const Header = () => {
 					</a>
 					<a rel="noreferrer" className="social-button" target="_blank" href="https://discord.gg/UCH5NqsTQp">
 						<DiscordLogo/>
+					</a>
+					<a rel="noreferrer" className="social-button" target="_blank" href="https://www.instagram.com/golfsolnft/">
+						<InstagramLogo/>
 					</a>
 					<div className="social-button">
 						<WalletButton/>
