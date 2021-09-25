@@ -33,8 +33,9 @@ export const CANDY_MACHINE_TREASURY_WALLET_ID = new PublicKey(
   process.env.REACT_APP_CANDY_MACHINE_TREASURY_WALLET_ID!
 );
 
-export const CANDY_MACHINE_START_TIME = new Date(1632600000000);
-// parseInt(process.env.REACT_APP_CANDY_MACHINE_START_DATE!) * 1000
+export const CANDY_MACHINE_START_TIME = new Date(
+  parseInt(process.env.REACT_APP_CANDY_MACHINE_START_DATE!) * 1000
+);
 
 export const IS_DROP_SOLD_OUT =
   process.env.REACT_APP_CANDY_MACHINE_SOLD_OUT! === "true";
