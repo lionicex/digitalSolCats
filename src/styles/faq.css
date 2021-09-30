@@ -1,9 +1,11 @@
 .FAQ {
-	margin: 100px 50px 100px 50px;
+	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	align-self: stretch;
+	width: 80%;
+	max-width: 900px;
 }
 
 .FAQ-Title {

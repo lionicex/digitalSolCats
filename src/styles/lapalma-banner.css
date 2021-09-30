@@ -3,7 +3,7 @@
 	background-color: #000000;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	margin-top: 20px;
 
 }
 .text-banner{
@@ -12,22 +12,22 @@
 	margin: 40px;
 }
 .lapalma-banner img {
-	width: 500px;
+	width: 50vw;
 	height: auto;
 
 }
 
 .lapalma-banner h3 {
 	font-weight: 700;
-	font-size: 25px;
+	font-size: 40px;
 	margin: 0;
 	text-align: left;
-	line-height: 30px;
+	line-height: 42px;
 }
 
 .lapalma-banner p {
-	padding: 12px 0;
-	font-size: 15px;
+	padding: 24px 0;
+	font-size: 20px;
 }
 .lapalma-banner a {
 	text-decoration: none;

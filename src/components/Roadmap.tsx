@@ -3,7 +3,6 @@ import "../styles/roadmap.css";
 const Roadmap = () => {
 	const roadmap = {alignSelf: "center"};
 	const roadmapDigital = {color: "inherit", textDecoration: "underline"};
-	const roadmapCard = {color: "inherit", textDecoration: "underline"};
 	return (
 		<>
 			<section className="Roadmap">
