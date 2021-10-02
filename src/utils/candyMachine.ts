@@ -20,8 +20,8 @@ export const checkDropSoldOut = async (
   );
   const itemsAvailable = state.data.itemsAvailable.toNumber();
   const itemsRedeemed = state.itemsRedeemed.toNumber();
-  const itemsSold = itemsAvailable - itemsRedeemed;
-  return itemsSold === 4990;
+  const itemsLeft = itemsAvailable - itemsRedeemed;
+  return itemsLeft <= 10;
 };
 
 export const mintOneToken = async (wallet: anchor.Wallet): Promise<string> => {
