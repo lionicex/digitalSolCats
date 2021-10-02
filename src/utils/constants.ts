@@ -18,7 +18,7 @@ export const SOLANA_NETWORK_ENV = process.env
   .REACT_APP_SOLANA_NETWORK! as WalletAdapterNetwork;
 
 export const RPC_CONNECTION = new anchor.web3.Connection(
-  `https://api.${SOLANA_NETWORK_ENV}.solana.com/`
+  anchor.web3.clusterApiUrl(SOLANA_NETWORK_ENV)
 );
 
 export const CANDY_MACHINE_STATE_ACCOUNT_ID = new PublicKey(
