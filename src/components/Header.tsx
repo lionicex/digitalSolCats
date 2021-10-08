@@ -33,7 +33,7 @@ const Header = () => {
 			</div>
 			<div className="car-wrapper">
 				<h3>
-					5,000 randomly generated Golf cars driving down the Solana Roads{" "}
+					5,000 randomly generated Golf cars driving down the Solana Roads{" "}<br/>Mint is 1.5 SOL
 				</h3>
 				<img src={solanaImage} alt="Harlequin"/>
 			</div>
