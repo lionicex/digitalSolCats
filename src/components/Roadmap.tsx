@@ -11,7 +11,7 @@ const Roadmap = () => {
 				</h2>
 				<div className="RoadmapRow">
 					<div className="RoadmapCard-Root">
-						<div className="RoadmapCard-title">#1 Launch | 2nd October at 20:00 UCT 🚀</div>
+						<div className="RoadmapCard-title">#1 Launch | October 8th at 20:00 UCT 🚀</div>
 						<div className="RoadmapCard-content">
 							Successfully launch 5,000 Golf cars with a fair minting process
 						</div>

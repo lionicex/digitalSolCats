@@ -45,7 +45,7 @@ const FAQ = () => {
             </h3>
           </div>
           <p className="Text-faq Text-body-faq QuestionAnswer">
-            The launch will be on the 2nd October at 20:00 UTC
+            The launch will be October 8th at 20:00 UTC
           </p>
         </div>
         <div className="Question">
